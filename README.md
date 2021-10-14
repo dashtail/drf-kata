@@ -1,8 +1,12 @@
 # drf-kata
 
+
+## Background
+
+Here at SewerAI we use Django to power our primary API. Django is a web framework which by default is mostly used to serve HTML. It also features a powerful ORM for interacting with databases. Django Rest Framework is an addon library which facilites the creation of JSON REST APIs within Django. 
 ## How to use this Kata
 
-You are given a bootsrap for Django and Postgres with Django Rest Framework also installed.
+You are given a bootstrap for Django and Postgres with Django Rest Framework also installed.
 
 Your goal is to create a simple note taking API.
 
@@ -30,9 +34,23 @@ subject
 text
 ```
 
+## Requirements
+
+Your app should run an API with all of the above endpoints functional. Please use the features of DRF to accomplish this -- your app should utilize serializers and viewsets. Your endpoints should require authentication. Also add functionality to the Django admin page to show your models. Writing unit tests is optional.
+
 ## Getting started
 
-docker-compose up
+    docker-compose up
+
+The compose creates a volume in the base directory and will automatically refresh the server as you make code changes.
+
+You can open a shell into the container as follows:
+
+    docker exec -it {container_name} bash
+
+Within that shell you can run the python manage command. You can create an admin user with:
+
+    python manage.py createsuperuser --email admin@example.com --username admin
 
 ## End to End Testing
 
