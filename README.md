@@ -4,6 +4,12 @@
 ## Background
 
 Here at SewerAI we use Django to power our primary API. Django is a web framework which by default is mostly used to serve HTML. It also features a powerful ORM for interacting with databases. Django Rest Framework is an addon library which facilites the creation of JSON REST APIs within Django. 
+
+Documentation can be found at:
+
+Django: https://docs.djangoproject.com/en/3.2/
+
+DRF: https://www.django-rest-framework.org/
 ## How to use this Kata
 
 You are given a bootstrap for Django and Postgres with Django Rest Framework also installed.
