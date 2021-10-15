@@ -3,7 +3,7 @@
 
 ## Background
 
-Here at SewerAI we use Django to power our primary API. Django is a web framework which by default is mostly used to serve HTML. It also features a powerful ORM for interacting with databases. Django Rest Framework is an addon library which facilites the creation of JSON REST APIs within Django. 
+Here at SewerAI we use Django to power our primary API. Django is a web framework which by default is mostly used to serve HTML. It also features a powerful ORM for interacting with databases. Django Rest Framework is an addon library which facilitates the creation of JSON REST APIs within Django. 
 
 Documentation can be found at:
 
