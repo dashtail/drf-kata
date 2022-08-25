@@ -54,9 +54,15 @@ You can open a shell into the container as follows:
 
     docker exec -it {container_name} bash
 
+Run the migrations to generate the database
+
+    python manage.py mimgrate
+
 Within that shell you can run the python manage command. You can create an admin user with:
 
     python manage.py createsuperuser --email admin@example.com --username admin
+
+
 
 ## End to End Testing
 
@@ -72,3 +78,7 @@ curl --location --request POST 'http://localhost:8000/notes/' \
     "text": "It's the first one",
 }'
 ```
+To run the tests, use the following command:
+
+    docker exec {container_name} python manage.py test
+
