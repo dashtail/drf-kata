@@ -62,7 +62,11 @@ Within that shell you can run the python manage command. You can create an admin
 
     python manage.py createsuperuser --email admin@example.com --username admin
 
+## User Authentication
+To generate the user token we use the Endpoint below and provide the user credentials
 
+`POST /api/token/`
+`{"username": <user name>, "password": <password>}`
 
 ## End to End Testing
 
